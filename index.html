@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una sorpresa para Joss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="inicio" class="pantalla-inicio">
+        <div class="tarjeta-inicio">
+            <span class="corazon">♥</span>
+            <h1>Una sorpresa para ti</h1>
+            <p>Hay pequeños detalles que se descubren pieza por pieza.</p>
+            <button id="comenzar">Descubrir sorpresa</button>
+        </div>
+    </section>
+
+    <main id="juego" class="pantalla-juego oculto">
+
+        <header class="encabezado">
+            <h1>Un pequeño rompecabezas para ti</h1>
+            <p>Une todas las piezas para descubrir la sorpresa.</p>
+        </header>
+
+        <div class="estadisticas">
+            <span id="nivel">Rompecabezas 1 de 5</span>
+            <span id="progreso">Piezas: 0 / 36</span>
+            <span id="porcentaje">0%</span>
+        </div>
+
+        <section class="zona-juego">
+
+            <div class="tablero-contenedor">
+
+                <img id="imagen-referencia"
+                     class="imagen-referencia"
+                     src="imagenes/ella.jpg"
+                     alt="Imagen de referencia">
+
+                <div id="tablero" class="tablero"></div>
+
+            </div>
+
+            <div class="panel-lateral">
+
+                <div id="zona-piezas" class="zona-piezas">
+                    <h2>Las piezas</h2>
+                    <p>Selecciona una pieza y colócala en su lugar.</p>
+                    <div id="bandeja" class="bandeja"></div>
+                </div>
+
+                <div id="carta-final" class="carta-final oculto">
+
+                    <div class="sobre">
+                        <span class="corazon">♥</span>
+
+                        <h2 id="titulo-carta">¡Lo lograste!</h2>
+
+                        <p id="mensaje-carta"></p>
+
+                        <p class="firma">Con mucho cariño. ♥</p>
+
+                        <span class="pie-carta">
+                            Una pequeña creación para ti
+                        </span>
+
+                        <button id="siguiente"
+                                class="flecha-siguiente"
+                                aria-label="Siguiente rompecabezas">
+                            →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <button id="reiniciar" class="boton-reiniciar">
+            Reiniciar rompecabezas
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
